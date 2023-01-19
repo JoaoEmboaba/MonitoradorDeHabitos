@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+  height: 100vh;
+  color: #fff;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #855cf6;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 48px;
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
+}
+
+form {
+  display: flex;
+  padding: 180px 48px 48px;
+  margin-top: 40px;
+  gap: 24px;
+  width: fit-content;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 53px;
+  gap: 25px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin: left 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  background-color: #181818;
+}
+
+input:checked {
+  background: #855cf6;
+}
+
+@media (max-width: 580px) {
+  button div {
+    display: none;
+  }
+}
